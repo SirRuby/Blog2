@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
+
   def index
     @portfolio_items = Portfolio.all
   end 
@@ -13,8 +15,7 @@ class PortfoliosController < ApplicationController
   end 
 
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body,
-    technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio_item.save
@@ -67,7 +68,9 @@ class PortfoliosController < ApplicationController
                                       :subtitle,
                                       :body,
                                       :main_image,
-                                      :thumb_image)
+                                      :thumb_image,
+                                      technologies_attributes: [:id, :name, :_destroy]
+                                     )
   end
 
   def set_portfolio_item
