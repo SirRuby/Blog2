@@ -3,6 +3,8 @@
 *= require_tree .
 *= require_self
 */
+@import 'bootstrap/dist/css/bootstrap';
+
 
 /*
  * Globals
@@ -32,6 +34,7 @@ a:hover {
 
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   height: 100%;
   background-color: #333;
 }
