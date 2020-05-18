@@ -47,3 +47,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'siruby_view_tool', git: 'https://github.com/SirRuby/siruby_view_tool'

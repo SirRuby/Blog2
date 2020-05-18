@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/SirRuby/siruby_view_tool
+  revision: 2a1a61b06f9ccb81da675c2c385b737b3caac3a6
+  specs:
+    siruby_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -210,6 +216,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)
+  siruby_view_tool!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
