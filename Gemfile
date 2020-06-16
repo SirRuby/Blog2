@@ -51,3 +51,7 @@ gem 'siruby_view_tool', git: 'https://github.com/SirRuby/siruby_view_tool'
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1' 
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.6'
+gem 'aws-sdk-s3', require: false
