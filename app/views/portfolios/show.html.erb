@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
   <div class="row">
     <div class="col-md-7">
@@ -8,9 +9,22 @@
       <h1><%= @portfolio_item.title %></h1>
 <hr>
 <em><%= @portfolio_item.subtitle %></em>
+=======
+<div class="container portfolio-container">
+  <div class="row">
+    <div class="col-md-7">
+    <%= image_tag (@portfolio_item.main_image), width: '100%' if @portfolio_item.main_image.attached? %>
+    </div>
 
-<p><%= @portfolio_item.body %></p>
+    <div class="col-md-5">
+      <h1><%= @portfolio_item.title %></h1>
 
+      <hr>
+>>>>>>> image-management
+
+      <em><%= @portfolio_item.subtitle %></em>
+
+<<<<<<< HEAD
 <hr>
 
 <h3>Technologies Used:</h3>
@@ -21,3 +35,23 @@
 </div>
 </div>
 </div> 
+=======
+      <p><%= @portfolio_item.body %></p>
+
+      <hr>
+
+      <h3>Technologies Used:</h3>
+
+      <% @portfolio_item.technologies.each do |t| %>
+      <p><%= t.name %></p>
+      <% end %>
+
+      <% if logged_in?(:site_admin) %>
+        <div class="">
+          <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+>>>>>>> image-management
