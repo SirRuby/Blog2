@@ -36,7 +36,7 @@
     <div>
   <ul>
     <%= f.fields_for :technologies do |technology_form| %>
-        <%= render 'technology_fields', f: technology_field %>
+        <%= render 'technology_fields', f: technology_form %>
     <% end %>
   </ul>
 
