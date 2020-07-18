@@ -55,3 +55,5 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.6'
 gem 'aws-sdk-s3', require: false
+gem 'twitter', '~> 7.0'
+gem 'redis', '~> 3.3', '>= 3.3.1'

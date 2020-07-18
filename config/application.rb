@@ -25,5 +25,6 @@ module Blog2
     config.load_defaults 6.0
     config.action_controller.permit_all_parameters = true
     config.generators.system_tests = nil
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
