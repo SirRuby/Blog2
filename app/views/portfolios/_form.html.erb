@@ -1,3 +1,4 @@
+
 <%= form_for(@portfolio_item) do |f| %>
   <div class="row">
     <div class="col-md-6">
@@ -36,15 +37,14 @@
     <div>
   <ul>
     <%= f.fields_for :technologies do |technology_form| %>
-        <%= render 'technology_fields', f: technology_form %>
+      <li>
+        <%= technology_form.label :name %>
+        <%= technology_form.text_field :name %>
+      </li>
     <% end %>
   </ul>
 
-      <div>
-        <%= link_to_add_association 'Add Technology', f, :technologies %>
-      </div>
-    </div> 
-      <div class="form-group">
+    <div class="form-group">
     <%= f.submit 'Save Portfolio Item', class: 'btn btn-primary btn-block' %>
   </div>
   </div>

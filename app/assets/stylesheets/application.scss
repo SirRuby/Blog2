@@ -220,5 +220,58 @@ body {
 .app-footer {
   color: white;
 }
-=======
+
+/*skills*/
+
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*aboutme & contact tables */
+
+.jumbotron {
+  background-color: rgba(52, 52, 52, 0.6);
+  margin: 40px;
+  padding: 50px;
+}
+
+.footer-container {
+  align-items: center; 
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 10; 
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.app-card-container {
+  color: whitesmoke;
+  text-align: left;
+  
+}
+
+.app-card-container > .cardabout {
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 40px;
+  background-color: rgba(52, 52, 52, 0.6);
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background-color: rgba(52, 52, 52, 0.6);
+}
+
+.wrapper {
+  padding-right: 40px;
+}
 

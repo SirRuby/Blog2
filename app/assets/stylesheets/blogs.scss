@@ -2,19 +2,18 @@
 @import "font-awesome";
 
 
-
 /*
  * Globals
  */
 
- @media (min-width: 48em) {
+@media (min-width: 48em) {
   html {
     font-size: 18px;
   }
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Poppins', sans-serif;
   color: #555;
 }
 
@@ -24,7 +23,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -160,6 +159,7 @@ h6, .h6 {
  */
 
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -174,6 +174,65 @@ h6, .h6 {
  * Custom styles
  */
 
- .social-links li {
+.social-links li {
   font-size: 2.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+.blog-body img {
+  width: 100%;
+}
+
+.blog-body img[alt=xlarge] {
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=large] {
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=medium] {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=small] {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topic-index > .card {
+  margin: 10px;
+  padding: 20px;
 }

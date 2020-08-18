@@ -37,12 +37,12 @@ def nav_items
       title: 'Contact'
     },
     {
-      url: blogs_path,
-      title: 'Blog'
-    },
-    {
       url: portfolios_path,
       title: 'Portfolio'
+    },
+    {
+      url: blogs_path,
+      title: 'Blog'
     },
   ]
 end

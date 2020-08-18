@@ -55,4 +55,9 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.6'
 gem 'aws-sdk-s3', require: false
-gem 'cocoon', '~> 1.2', '>= 1.2.9'
+gem 'twitter', '~> 7.0'
+gem 'redis', '~> 3.3', '>= 3.3.1'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.3'
+
+
