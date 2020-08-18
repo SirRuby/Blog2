@@ -1,8 +1,7 @@
-<%= form_with(model: blog, local: true) do |form| %>
+<%= form_with(model: blog, local: true) do |f| %>
   <% if blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
       <ul>
         <% blog.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -12,9 +11,8 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, class: 'form-control' %>
-  </div>
+  <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
+</div>
 
   <div class="form-group">
     <%= form.label :topic_id %>
