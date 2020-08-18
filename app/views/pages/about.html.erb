@@ -1,22 +1,38 @@
-<h1>About Me</h1>
+<br>
 
+<div class="app-card-container">
+  <div class="cardabout">
+<h1>About me</h1>
 
-
-<div class="row">
+<div class="row nogutter">
   <div class="col-md-4">
-        <%= image_tag "", width: 200, height: 200, alt: "profile image" %>
-      </div>
-      <div class="col-md-8">
-      <p>
-
-      <p>Web Developer based in Bangkok Thailand. I have a passion for solving complex problems. My areas of focus include Ruby on Rails, Golang, and  Algorithms & Data Structures.</p>
+    <%= image_tag "profileme1.png", height: 320, width: 220, alt: "profile image" %>
+  </div>
+  <div class="col-md-8">  
+    <br>
+    <br>
+    <br>
+    
+    <p>
+    <div class="wrapper">
+    <p>Back end Web Developer based in Bangkok Thailand. I have a serious passion for solving complex problems. My main areas of focus include Ruby on Rails, Golang, and  Algorithms & Data Structures.</p>
+    <class "btn btn-lg btn-secondary">
+          <%= link_to "Portfolio", portfolios_path, class: "btn btn-lg btn-secondary" %>
+    </div>
   </div>
 </div>
+
+
+<h1>Toolkit</h1>
+<div class="row">
+      <%= image_tag "skills/rors.png", width: 100, height: 100, alt: "Ruby on rails", class: "image" %>
+      <%= image_tag "skills/golang.png",  width: 100, height: 100, alt: "profile image", class: "image" %>
+      <%= image_tag "skills/JS.png",  width: 100, height: 100, alt: "profile image", class: "image" %>
+      <%= image_tag "skills/html.png",  width: 100, height: 100, alt: "profile image", class: "image" %>
+      <%= image_tag "skills/css3.png",  width: 110, height: 110, alt: "profile image", class: "image" %>
+      <%= image_tag "skills/react.png",  width: 110, height: 110, alt: "profile image", class: "image" %>
+    </div>
+</div>
+</div>
+</div> 
 <br>
-<h4>My Skills</h4>
-<%= image_tag "skills/rors.png", width: 100, height: 100, alt: "Ruby on rails" %>
-<%= image_tag "skills/golang.png",  width: 80, height: 100, alt: "profile image" %>
-<%= image_tag "skills/JS.png",  width: 100, height: 100, alt: "profile image" %>
-<%= image_tag "skills/html.png",  width: 100, height: 100, alt: "profile image" %>
-
-
