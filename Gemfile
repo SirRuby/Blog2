@@ -57,7 +57,7 @@ gem 'mini_magick', '~> 4.6'
 gem 'aws-sdk-s3', require: false
 gem 'twitter', '~> 7.0'
 gem 'redis', '~> 3.3', '>= 3.3.1'
-gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.3'
 
 
